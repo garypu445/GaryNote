@@ -24,5 +24,5 @@
 
 <!-- Please don't remove this: Grab your social icons from https://github.com/mike7777op -->
 
-# GaryNote | Gary的網站
+# GaryNote | Gary Web
 紀錄一些程式語言的練習與出去玩的照片記錄
