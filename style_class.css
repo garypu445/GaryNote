@@ -1,0 +1,76 @@
+html{
+    height: 100%;
+}
+.body{
+    margin: 0px;
+
+}
+
+.top-title{
+    background-color: #353d45;
+    height: 200px;
+}
+.container_navbar{
+    display: flex;
+    padding: 10px;
+}
+.navbar-brand-title{
+    font-size: 60px;
+    margin-left: 500px;
+    margin-top: 50px;
+    color: white;
+    
+}
+.collapse_navbar{
+    margin-top: 150px;
+    margin-left: 900px;
+}
+.collapse_navbar .navbar-nav_ml-auto a{
+    color: white;
+}
+.search_box{
+    margin-top: 150px;
+    margin-left: 50px;
+}
+.container .content_col{
+    width: 1000px; 
+    border: none;
+    margin-top: 100px;
+    margin-left: 700px;
+}
+.title1{
+    color: black;
+    font-size: 25px;
+}
+.container-footer{
+    
+    height: 100px;
+    background-color: #353d45;
+
+    
+}
+
+.container-footer .align-item-center{
+    display: flex;
+    margin-top: 10px;
+    margin-left: 740px;
+}
+.container-footer .align-item-center .text-left{
+    margin-top: 50px;
+    color: white;
+}
+.container-footer .align-item-center .text-icons{
+    margin-top: 30px;
+    margin-left: 800px;
+}
+
+/* About.html */
+.col-md{
+    height: 980px;
+    text-align: center;
+    font-size: 20px;
+}
+#介紹{
+    font-size: 45px;
+    margin-right: 500px;
+}
