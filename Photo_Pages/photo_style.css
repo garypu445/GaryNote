@@ -38,12 +38,17 @@ html{
     flex: 10%;
     margin-top: 150px;
 }
+.container{
+    display: flex;
+    justify-content: center;
+}
 .container .content_col{
     border: none;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     margin-top: 100px;
     /* margin-left: 700px; */
+    width: 1200px;
 }
 .container .content_col .post-list-pl-0{
     width: 1000px;
@@ -73,22 +78,6 @@ html{
     margin-left: 800px;
 }
 
-/* About.html */
-
-#介紹{
-    font-size: 45px;
-    
-}
-.container-5{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 1600px;
-    justify-content: center;
-    /* justify-content: flex-end; */
-    align-items: center;
-    margin-top: -600px;
-}
-.col-md p{
-    font-size: 20px;
+p img{
+    width: 1200px;
 }
