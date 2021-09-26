@@ -3,7 +3,7 @@ html{
 }
 .body{
     margin: 0px;
-
+    height: 100%;
 }
 
 .top-title{
@@ -37,6 +37,9 @@ html{
 .search_box{
     flex: 10%;
     margin-top: 150px;
+}
+.container{
+    min-height: calc(100%-100px);
 }
 .container .content_col{
     border: none;
@@ -88,6 +91,7 @@ html{
     /* justify-content: flex-end; */
     align-items: center;
     margin-top: -600px;
+    min-height: calc(100%-100px);
 }
 .col-md p{
     font-size: 20px;
