@@ -39,7 +39,7 @@ html{
     margin-top: 150px;
 }
 .container{
-    min-height: calc(100%-100px);
+    min-height: calc(100%-300px);
 }
 .container .content_col{
     border: none;
@@ -89,7 +89,7 @@ html{
     /* justify-content: flex-end; */
     align-items: center;
     margin-top: -600px;
-    min-height: calc(100%-100px);
+    min-height: calc(100%-300px);
 }
 .col-md p{
     font-size: 20px;

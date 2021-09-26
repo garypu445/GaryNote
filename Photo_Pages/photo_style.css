@@ -39,7 +39,7 @@ html{
     margin-top: 150px;
 }
 .container{
-    min-height: calc(100% - 100px); /*減去footer高度*/
+    min-height: calc(100% - 300px); /*減去footer高度*/
     display: flex;
     justify-content: center;
 }
