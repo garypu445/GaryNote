@@ -55,12 +55,10 @@ html{
     color: black;
     font-size: 25px;
 }
-.container-footer{
-    
-    height: 100px;
-    background-color: #353d45;
 
-    
+.footer {
+  height: 100px; /*設定footer本身高度*/
+  background-color: #353d45;
 }
 
 .container-footer .align-item-center{

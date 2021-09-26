@@ -3,7 +3,7 @@ html{
 }
 .body{
     margin: 0px;
-
+    height: 100%;
 }
 
 .top-title{
@@ -39,9 +39,9 @@ html{
     margin-top: 150px;
 }
 .container{
+    min-height: calc(100% - 100px); /*減去footer高度*/
     display: flex;
     justify-content: center;
-    min-height: calc(100%-100px);
 }
 .container .content_col{
     border: none;
@@ -58,12 +58,9 @@ html{
     color: black;
     font-size: 25px;
 }
-.container-footer{
-    
-    height: 100px;
-    background-color: #353d45;
-
-    
+.footer {
+  height: 100px; /*設定footer本身高度*/
+  background-color: #353d45;
 }
 
 .container-footer .align-item-center{
