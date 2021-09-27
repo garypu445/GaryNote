@@ -112,3 +112,15 @@ p img{
 #btnscrolltotop:active{
     background: #353d45;
 }
+
+.cat{
+    width: 500px;
+}
+.container .content_col_cat{
+    border: none;
+    /* display: flex; */
+    justify-content: center;
+    margin-top: 100px;
+    /* margin-left: 700px; */
+    width: 500px;
+}
