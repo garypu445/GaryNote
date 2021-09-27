@@ -93,3 +93,22 @@ html{
 p img{
     width: 1200px;
 }
+
+/* Scrollupbtn */
+#btnscrolltotop{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #546575;
+    box-shadow:  0 0 10px rgba(0, 0, 0, 0.25);
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+#btnscrolltotop:active{
+    background: #353d45;
+}
