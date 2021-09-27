@@ -9,6 +9,8 @@ html{
 .top-title{
     background-color: #353d45;
     height: 200px;
+    max-width: 100%;
+    height: auto;
 }
 .container_navbar{
     display: flex;
@@ -91,7 +93,9 @@ html{
 }
 
 p img{
-    width: 1200px;
+    /* width: 1200px; */
+    max-width: 100%;
+    height: auto;
 }
 
 /* Scrollupbtn */
