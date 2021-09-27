@@ -114,7 +114,7 @@ p img{
 }
 
 .cat{
-    width: 500px;
+    width: 800px;
 }
 .container .content_col_cat{
     border: none;
@@ -122,5 +122,5 @@ p img{
     justify-content: center;
     margin-top: 100px;
     /* margin-left: 700px; */
-    width: 500px;
+    width: 800px;
 }
