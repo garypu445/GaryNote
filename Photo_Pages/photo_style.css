@@ -54,6 +54,20 @@ html{
 .container .content_col .post-list-pl-0{
     width: 1000px;
 }
+
+.container .col-md_About{
+    width: 700px;
+}
+.container .col-md_About #介紹{
+
+    font-size: 45px;
+}
+
+.container .col-md_About p{
+
+    font-size: 20px;
+}
+
 .title1{
     color: black;
     font-size: 25px;
