@@ -11,7 +11,9 @@
     <!-- viewport 視口 調整裝置螢幕比例大小-->
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>GaryWeb</title>
-    <link rel="stylesheet" href="style_class.css" />
+    <link rel="stylesheet" href="Photo_Pages/photo_style.css" />
+    <!--這段話表示 當螢幕寬度在 400px ~ 700px 之間，我們就會使用 test.css 這個檔案-->
+    <link rel="stylesheet" media="screen and (max-width: 400px)" href="screen_size/400.css">
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="bookmark" href="favicon.ico">
 </head>
@@ -21,14 +23,14 @@
         <nav class="container_navbar">
             <div class="navar-title">
                 <a class="navbar-brand-title" href="index.html" style="text-decoration: none;">
-                    <span>GaryWeb</span>
+                    <span>Gary Web</span>
                 </a>
             </div>
             <div class="collapse_navbar">
                 <div class="navbar-nav_ml-auto">
                     <a class="nav-item_nav-link_text-right" href="index.html">Home</a>
                     <a class="nav-item_nav-link_text-right" href="Photo.html">Photos</a>
-                    <a class="nav-item_nav-link_text-right" href="About.html">About</a>
+                    <a class="nav-item_nav-link_text-right" href="About1.html">About</a>
                 </div>
             </div>
             <div class="search_box">
@@ -47,10 +49,11 @@
                     <p class="excerpt1">程式紀錄。</p>
                     <div class="info" style="border: none;">
                         <span class="pr-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
-                                focusable="false" width="0.88em" height="1em"
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                aria-hidden="true" focusable="false" width="0.88em" height="1em"
                                 style="vertical-align: -0.125em;-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
-                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 14 16" class="iconify" data-icon="octicon:calendar">
+                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 14 16" class="iconify"
+                                data-icon="octicon:calendar">
                                 <path fill-rule="evenodd"
                                     d="M13 2h-1v1.5c0 .28-.22.5-.5.5h-2c-.28 0-.5-.22-.5-.5V2H6v1.5c0 .28-.22.5-.5.5h-2c-.28 0-.5-.22-.5-.5V2H2c-.55 0-1 .45-1 1v11c0 .55.45 1 1 1h11c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 12H2V5h11v9zM5 3H4V1h1v2zm6 0h-1V1h1v2zM6 7H5V6h1v1zm2 0H7V6h1v1zm2 0H9V6h1v1zm2 0h-1V6h1v1zM4 9H3V8h1v1zm2 0H5V8h1v1zm2 0H7V8h1v1zm2 0H9V8h1v1zm2 0h-1V8h1v1zm-8 2H3v-1h1v1zm2 0H5v-1h1v1zm2 0H7v-1h1v1zm2 0H9v-1h1v1zm2 0h-1v-1h1v1zm-8 2H3v-1h1v1zm2 0H5v-1h1v1zm2 0H7v-1h1v1zm2 0H9v-1h1v1z"
                                     fill="currentColor"></path>
@@ -61,14 +64,15 @@
                 </li>
                 <hr>
                 <li class="pb3">
-                    <a class="title1" href="test.html" style="text-decoration: none;">【咖啡廳】</a>
+                    <a class="title1" href="travel.html" style="text-decoration: none;">【咖啡廳】</a>
                     <p class="excerpt1">Coffee。</p>
                     <div class="info" style="border: none;">
                         <span class="pr-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
-                                focusable="false" width="0.88em" height="1em"
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                aria-hidden="true" focusable="false" width="0.88em" height="1em"
                                 style="vertical-align: -0.125em;-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
-                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 14 16" class="iconify" data-icon="octicon:calendar">
+                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 14 16" class="iconify"
+                                data-icon="octicon:calendar">
                                 <path fill-rule="evenodd"
                                     d="M13 2h-1v1.5c0 .28-.22.5-.5.5h-2c-.28 0-.5-.22-.5-.5V2H6v1.5c0 .28-.22.5-.5.5h-2c-.28 0-.5-.22-.5-.5V2H2c-.55 0-1 .45-1 1v11c0 .55.45 1 1 1h11c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 12H2V5h11v9zM5 3H4V1h1v2zm6 0h-1V1h1v2zM6 7H5V6h1v1zm2 0H7V6h1v1zm2 0H9V6h1v1zm2 0h-1V6h1v1zM4 9H3V8h1v1zm2 0H5V8h1v1zm2 0H7V8h1v1zm2 0H9V8h1v1zm2 0h-1V8h1v1zm-8 2H3v-1h1v1zm2 0H5v-1h1v1zm2 0H7v-1h1v1zm2 0H9v-1h1v1zm2 0h-1v-1h1v1zm-8 2H3v-1h1v1zm2 0H5v-1h1v1zm2 0H7v-1h1v1zm2 0H9v-1h1v1z"
                                     fill="currentColor"></path>
@@ -76,44 +80,46 @@
                             <span class="text=muted">近期更新:2021/09/04</span>
                         </span>
                     </div>
-                    </li>
-                    <hr>
-                    <li class="pb3">
-                        <a class="title1" href="Photo_Pages/Cat.html" style="text-decoration: none;">【貓】Cat Fancier</a>
-                        <p class="excerpt1">貓咪簡稱惡魔。</p>
-                        <div class="info" style="border: none;">
-                            <span class="pr-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
-                                    focusable="false" width="0.88em" height="1em"
-                                    style="vertical-align: -0.125em;-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
-                                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 14 16" class="iconify" data-icon="octicon:calendar">
-                                    <path fill-rule="evenodd"
-                                        d="M13 2h-1v1.5c0 .28-.22.5-.5.5h-2c-.28 0-.5-.22-.5-.5V2H6v1.5c0 .28-.22.5-.5.5h-2c-.28 0-.5-.22-.5-.5V2H2c-.55 0-1 .45-1 1v11c0 .55.45 1 1 1h11c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 12H2V5h11v9zM5 3H4V1h1v2zm6 0h-1V1h1v2zM6 7H5V6h1v1zm2 0H7V6h1v1zm2 0H9V6h1v1zm2 0h-1V6h1v1zM4 9H3V8h1v1zm2 0H5V8h1v1zm2 0H7V8h1v1zm2 0H9V8h1v1zm2 0h-1V8h1v1zm-8 2H3v-1h1v1zm2 0H5v-1h1v1zm2 0H7v-1h1v1zm2 0H9v-1h1v1zm2 0h-1v-1h1v1zm-8 2H3v-1h1v1zm2 0H5v-1h1v1zm2 0H7v-1h1v1zm2 0H9v-1h1v1z"
-                                        fill="currentColor"></path>
-                                </svg>
-                                <span class="text=muted">近期更新:2021/09/28</span>
-                            </span>
-                        </div>
-                    </li>
-                    <hr>
-                    <li class="pb3">
-                        <a class="title1" href="Photo.html" style="text-decoration: none;">【Travel Maker】</a>
-                        <p class="excerpt1">出去遊玩的照片心得。</p>
-                        <div class="info" style="border: none;">
-                            <span class="pr-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true"
-                                    focusable="false" width="0.88em" height="1em"
-                                    style="vertical-align: -0.125em;-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
-                                    preserveAspectRatio="xMidYMid meet" viewBox="0 0 14 16" class="iconify" data-icon="octicon:calendar">
-                                    <path fill-rule="evenodd"
-                                        d="M13 2h-1v1.5c0 .28-.22.5-.5.5h-2c-.28 0-.5-.22-.5-.5V2H6v1.5c0 .28-.22.5-.5.5h-2c-.28 0-.5-.22-.5-.5V2H2c-.55 0-1 .45-1 1v11c0 .55.45 1 1 1h11c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 12H2V5h11v9zM5 3H4V1h1v2zm6 0h-1V1h1v2zM6 7H5V6h1v1zm2 0H7V6h1v1zm2 0H9V6h1v1zm2 0h-1V6h1v1zM4 9H3V8h1v1zm2 0H5V8h1v1zm2 0H7V8h1v1zm2 0H9V8h1v1zm2 0h-1V8h1v1zm-8 2H3v-1h1v1zm2 0H5v-1h1v1zm2 0H7v-1h1v1zm2 0H9v-1h1v1zm2 0h-1v-1h1v1zm-8 2H3v-1h1v1zm2 0H5v-1h1v1zm2 0H7v-1h1v1zm2 0H9v-1h1v1z"
-                                        fill="currentColor"></path>
-                                </svg>
-                                <span class="text=muted">近期更新:2021/09/04</span>
-                            </span>
-                        </div>
-                    </li>
-                    <hr>
+                </li>
+                <hr>
+                <li class="pb3">
+                    <a class="title1" href="Photo_Pages/cat.html" style="text-decoration: none;">【貓】</a>
+                    <p class="excerpt1">貓咪簡稱惡魔。</p>
+                    <div class="info" style="border: none;">
+                        <span class="pr-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                aria-hidden="true" focusable="false" width="0.88em" height="1em"
+                                style="vertical-align: -0.125em;-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 14 16" class="iconify"
+                                data-icon="octicon:calendar">
+                                <path fill-rule="evenodd"
+                                    d="M13 2h-1v1.5c0 .28-.22.5-.5.5h-2c-.28 0-.5-.22-.5-.5V2H6v1.5c0 .28-.22.5-.5.5h-2c-.28 0-.5-.22-.5-.5V2H2c-.55 0-1 .45-1 1v11c0 .55.45 1 1 1h11c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 12H2V5h11v9zM5 3H4V1h1v2zm6 0h-1V1h1v2zM6 7H5V6h1v1zm2 0H7V6h1v1zm2 0H9V6h1v1zm2 0h-1V6h1v1zM4 9H3V8h1v1zm2 0H5V8h1v1zm2 0H7V8h1v1zm2 0H9V8h1v1zm2 0h-1V8h1v1zm-8 2H3v-1h1v1zm2 0H5v-1h1v1zm2 0H7v-1h1v1zm2 0H9v-1h1v1zm2 0h-1v-1h1v1zm-8 2H3v-1h1v1zm2 0H5v-1h1v1zm2 0H7v-1h1v1zm2 0H9v-1h1v1z"
+                                    fill="currentColor"></path>
+                            </svg>
+                            <span class="text=muted">近期更新:2021/09/28</span>
+                        </span>
+                    </div>
+                </li>
+                <hr>
+                <li class="pb3">
+                    <a class="title1" href="Photo.html" style="text-decoration: none;">【Travel Maker】</a>
+                    <p class="excerpt1">出去遊玩的照片心得。</p>
+                    <div class="info" style="border: none;">
+                        <span class="pr-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                aria-hidden="true" focusable="false" width="0.88em" height="1em"
+                                style="vertical-align: -0.125em;-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+                                preserveAspectRatio="xMidYMid meet" viewBox="0 0 14 16" class="iconify"
+                                data-icon="octicon:calendar">
+                                <path fill-rule="evenodd"
+                                    d="M13 2h-1v1.5c0 .28-.22.5-.5.5h-2c-.28 0-.5-.22-.5-.5V2H6v1.5c0 .28-.22.5-.5.5h-2c-.28 0-.5-.22-.5-.5V2H2c-.55 0-1 .45-1 1v11c0 .55.45 1 1 1h11c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 12H2V5h11v9zM5 3H4V1h1v2zm6 0h-1V1h1v2zM6 7H5V6h1v1zm2 0H7V6h1v1zm2 0H9V6h1v1zm2 0h-1V6h1v1zM4 9H3V8h1v1zm2 0H5V8h1v1zm2 0H7V8h1v1zm2 0H9V8h1v1zm2 0h-1V8h1v1zm-8 2H3v-1h1v1zm2 0H5v-1h1v1zm2 0H7v-1h1v1zm2 0H9v-1h1v1zm2 0h-1v-1h1v1zm-8 2H3v-1h1v1zm2 0H5v-1h1v1zm2 0H7v-1h1v1zm2 0H9v-1h1v1z"
+                                    fill="currentColor"></path>
+                            </svg>
+                            <span class="text=muted">近期更新:2021/09/04</span>
+                        </span>
+                    </div>
+                </li>
+                <hr>
                 <li class="pb3">
                     <a class="title1" href="school.html" style="text-decoration: none;">【台南酒吧】</a>
                     <p class="excerpt1">酒吧的紀錄資訊</p>
