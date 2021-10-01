@@ -173,7 +173,8 @@ label.logo{
 @media (max-width:952px){
     label.logo{
         font-size: 30px;
-        padding-left: 50px;
+        padding-left: 15px;
+        
     }
     .nav1 .nav_slide_bar li a{
         font-size: 16px;
