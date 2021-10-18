@@ -57,81 +57,70 @@ label.logo{
 #check{
     display: none;
 }
-.container {
-    display: flex;
-    justify-content: center;
-    min-height: calc(100% - 200px); /*減去footer高度*/
-    width: 100%;
-}
-
-
-.container .container-col{
-    margin-top: 20px;
-    line-height: 50px;
-    width: 800px;    
-}
 
 .container_image{
-    /* width: 90%; */
     margin: 0px;
     padding: 0px;
+    /* height: 100%; */
+    width: 100%;
     min-height: calc(100% - 200px); /*減去footer高度*/
+    text-align: center;
+}
+
+.container_image hr{
+    width: 50%;
+    margin: 0 25% 0 25%;
 }
 .container_image .gallery{
-    align-content: center;
-    margin: 10px 200px;
+    position: relative;
+    height: auto;
+    width: 90%;
+    margin: auto;
+    padding: 45px 0;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 2vh;
+    grid-auto-flow: dense;
 }
 
-.container_image .gallery img{
-    width: 300px;
-    padding: 5px;
-    filter: grayscale(80%);
-    transition: 1s;
-}
-
-.container_image .gallery img:hover{
-    filter: grayscale(0);
-    transform: scale(1.1);
-}
-
-.container #index_col{
-    margin-top: 50px;
-}
-
-.container #index_col .info img{
-    width: 15px;
-    margin: 0 5px;
-    margin-left: 10px;
-    
-}
-
-.container .container-col .info img{
-    width: 15px;
-    margin: 0 5px;
-    margin-left: 10px;
-    
-}
-
-.container .container-col .title1{
-    font-size: 30px;
-    color: black;   
-}
-
-.container .container-col #介紹{
-    font-size: 40px;
-}
-
-.container .container-col p{
-    font-size: 20px;
-}
-
-.container .container-col .excerpt1{
-    font-size: 20px;
-    margin-left: 10px;
-}
-
-.container .container-col img{
+.container_image .gallery .img{
+    position: relative;
     width: 100%;
+    height: 100%;
+    overflow: hidden;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.9);
+    border-radius: 2px;
+}
+
+.container_image .gallery .img:first-child{
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+
+.container_image .gallery .img:nth-child(2n+3){
+    grid-row-start: span 2;
+}
+.container_image .gallery .img:nth-child(4n+5){
+    grid-column-start: span 2;
+    grid-row-start: span 2;
+}
+.container_image .gallery .img:nth-child(6n+7){
+    grid-column-start: span 1;
+}
+.container_image .gallery .img:nth-child(8n+9){
+    grid-column-start: span 1;
+    grid-row-start: span 1;
+}
+.container_image .gallery .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.5) grayscale(90%);
+    transition: 0.3s ease-in-out;
+}
+
+.container_image .gallery .img:hover img{
+    filter: brightness(1) grayscale(0);
 }
 
 .footer {
@@ -195,6 +184,7 @@ label.logo{
     border: none;
     outline: none;
     cursor: pointer;
+    z-index: 20;
 }
 #btnscrolltotop:active{
     background: #353d45;
@@ -209,20 +199,12 @@ label.logo{
     .nav1 .nav_slide_bar li a{
         font-size: 16px;
     }
-  
-    .container .container-col #介紹{
-        font-size: 30px;
+    
+    .container_image .gallery{
+        display: grid;
+        grid-template-columns: auto auto auto;
     }
-    .container .container-col p{
-        font-size: 15px;
-    }
-
-    .container .container-col .title1{
-        font-size: 25px;    
-    }
-    .container .container-col h1{
-        font-size: 25px;    
-    }
+    
 }
 @media (max-width:858px){
     .checkbtn{
@@ -237,6 +219,7 @@ label.logo{
         left: -120%;
         text-align: center;
         transition: all .5s;
+        z-index: 25;
     }
     .nav1 .nav_slide_bar li{
         display: block;
@@ -255,13 +238,19 @@ label.logo{
         left: 0;
     }
 
-    .container .container-col .title1{
-        font-size: 20px;    
+    .container_image .gallery{
+        display: grid;
+        grid-template-columns: auto auto;
     }
-    .container .container-col h1{
-        font-size: 20px;    
+    
+    .container_image{
+        margin-top: 20px;
     }
-    .container .container-col h3{
-        font-size: 18px;    
+ 
+    .container_image h1{
+        font-size: 20px;
+    }
+    .container_image p{
+        font-size: 10px;
     }
 }
