@@ -6,15 +6,17 @@
     <!-- 讓搜尋引擎更了解這個網頁的內容 -->
     <meta name="description" content="Gary Web" />
     <meta name="author" content="Gary Pu" />
-    <meta name="keyword" content="日常筆記,軟體筆記,拍照" />
+    <meta name="keyword" content="貓咪,cat,拍照" />
     <!-- viewport 視口 調整裝置螢幕比例大小-->
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>Photos</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Demon</title>
+    <link rel="stylesheet" href="Ablum.css" />
     <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
     <link rel="shortcut icon" href="icons/favicon.ico">
     <link rel="bookmark" href="icons/favicon.ico">
-
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <script src="js/lightbox-plus-jquery.min.js"></script>
 </head>
 
 <body>
@@ -24,7 +26,7 @@
             <label for="check" class="checkbtn">
                 <img src="icons/icons8-menu-50.png">
             </label>
-            <label class="logo">Photos</label>
+            <label class="logo">Gary's Album</label>
             <ul class="nav_slide_bar">
                 <li><a class="nav_bar" href="index.html">Home</a></li>
                 <li><a class="nav_bar" href="Photo.html">Photos</a></li>
@@ -32,11 +34,37 @@
             </ul>
         </nav>
     </header>
-    <div class="container">
-        <div class="container-col">
+    <button id="btnscrolltotop">
+        <i class="material-icons">arrow_upward</i>
+    </button>
+    <div class="container_image">
+        <div class="gallery">
+            <a href="Photos/Henry_album/image1.jpg" data-lightbox="maygallery" data-title="cool"><img src="Photos/Henry_album/image1.jpg"></a>
+            <!-- <img src="Photos/Henry_album/image2.jpg"> -->
+            <a href="Photos/Henry_album/image3.jpg" data-lightbox="maygallery" data-title="cool"><img src="Photos/Henry_album/image3.jpg"></a>
+            <a href="Photos/Henry_album/image4.jpg" data-lightbox="maygallery" data-title="cool"><img src="Photos/Henry_album/image4.jpg"></a>
+            <a href="Photos/Henry_album/image5.jpg" data-lightbox="maygallery" data-title="cool"><img src="Photos/Henry_album/image5.jpg"></a>
+            <a href="Photos/Henry_album/image6.jpg" data-lightbox="maygallery" data-title="cool"><img
+                    src="Photos/Henry_album/image6.jpg"></a>
+            <a href="Photos/Henry_album/image7.jpg" data-lightbox="maygallery" data-title="cool"><img
+                    src="Photos/Henry_album/image7.jpg"></a>
+            <a href="Photos/Henry_album/image10.jpg" data-lightbox="maygallery" data-title="cool"><img
+                    src="Photos/Henry_album/image10.jpg"></a>
+            <!-- <img src="Photos/Henry_album/image8.jpg"> -->
+            <!-- <img src="Photos/Henry_album/image9.jpg"> -->
+            <!-- <img src="Photos/Henry_album/image11.jpg"> -->
+            <a href="Photos/Henry_album/image12.jpg" data-lightbox="maygallery" data-title="cool"><img
+                    src="Photos/Henry_album/image12.jpg"></a>
+            <a href="Photos/Henry_album/image13.jpg" data-lightbox="maygallery" data-title="cool"><img
+                    src="Photos/Henry_album/image13.jpg"></a>
+            <!-- <img src="Photos/Henry_album/image14.jpg"> -->
             
         </div>
     </div>
+    <br />
+    <br />
+    <br />
+    <script src="script.js"></script>
     <footer class="footer">
         <div class="footer_container">
             <div class="social">
