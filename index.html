@@ -11,17 +11,18 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>GaryWeb</title>
     <link rel="stylesheet" href="style.css" />
-    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="shortcut icon" href="icons/favicon.ico">
     <link rel="bookmark" href="icons/favicon.ico">
-
+    <link rel="stylesheet" href="css/lightbox.min.css">
+    <script src="js/lightbox-plus-jquery.min.js"></script>
 </head>
 
 <body>
     <header>
         <nav class="nav1">
             <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
+            <label for="check" class="checkbtn" id="checkbtn">
                 <img src="icons/icons8-menu-50.png">
             </label>
             <label class="logo">GaryWeb</label>
@@ -32,6 +33,9 @@
             </ul>
         </nav>
     </header>
+    <button id="btnscrolltotop" style="display: none;"> 
+        <i class="material-icons">arrow_upward</i>
+    </button>
     <div class="container">
         <div class="container-col" id="index_col">
             <ul class="post-list-pl-0">
@@ -131,6 +135,7 @@
             <br />
         </div>
     </div>
+    <script src="script.js"></script>
     <footer class="footer">
         <div class="footer_container">
             <div class="social">

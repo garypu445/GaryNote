@@ -220,7 +220,7 @@ label.logo{
         text-align: center;
         transition: all .5s;
         z-index: 25;
-        scroll-snap-type:x mandatory;
+        /* scroll-snap-type:x mandatory; */
     }
     .nav1 .nav_slide_bar li{
         display: block;
