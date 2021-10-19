@@ -18,7 +18,7 @@ btnscrolltotop.addEventListener("click", function () {
 var checkbtn = document.getElementById("checkbtn");
 var e = 0;
 checkbtn.onclick = function(){
-    console.log(e)
+    // console.log(e)
     if (e == 0){
         // console.log("hi");
         $("body").css({"position":"fixed","width":"100%"});
