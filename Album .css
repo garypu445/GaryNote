@@ -220,7 +220,7 @@ label.logo{
         text-align: center;
         transition: all .5s;
         z-index: 25;
-        -webkit-overflow-scrolling: touch;
+        scroll-snap-type:x mandatory;
     }
     .nav1 .nav_slide_bar li{
         display: block;
@@ -240,8 +240,18 @@ label.logo{
     }
 
     .container_image .gallery{
-        display: grid;
-        grid-template-columns: auto auto;
+        display: block;
+        /* grid-template-columns: auto auto; */
+    }
+    .container_image .gallery .img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 2% 0;
+    }
+
+    .container_image .gallery .img img{
+        display: block;
     }
     
     .container_image{
