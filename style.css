@@ -67,8 +67,10 @@ label.logo{
 
 .container .container-col{
     margin-top: 20px;
+    margin-bottom: 50px;
     line-height: 50px;
-    width: 800px;    
+    width: 800px;
+    border-style: solid; 
 }
 
 .container #index_col{
