@@ -62,6 +62,7 @@ label.logo{
     justify-content: center;
     min-height: calc(100% - 200px); /*減去footer高度*/
     width: 100%;
+    background-color: rgb(242, 242, 242);
 }
 
 
@@ -70,7 +71,8 @@ label.logo{
     margin-bottom: 50px;
     line-height: 50px;
     width: 800px;
-    border-style: solid; 
+    /* border-style: solid;  */
+    background-color: rgb(255, 255, 255);
 }
 
 .container #index_col{
