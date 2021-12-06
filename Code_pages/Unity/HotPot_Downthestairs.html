@@ -38,6 +38,20 @@
     <div class="container" style="background-color:rgb(242, 242, 242);">
         <div class="container-col" style="background-color: rgb(255, 255, 255);">
             <h1 style="text-align: center;">HotPot:Down the stairs</h1>
+
+            <canvas id="unity-canvas" style="width: 500px; height: 500px; background: #231F20; position: absolute; margin: auto; left: 0; right: 0; top: 200px;"></canvas>
+            <script src="HotPot/Build/HotPot.loader.js"></script>
+            <script>
+                createUnityInstance(document.querySelector("#unity-canvas"), {
+                    dataUrl: "Build/HotPot.data",
+                    frameworkUrl: "Build/HotPot.framework.js",
+                    codeUrl: "Build/HotPot.wasm",
+                    streamingAssetsUrl: "StreamingAssets",
+                    companyName: "GaryINC",
+                    productName: "HotPot",
+                    productVersion: "1.0",
+                });
+            </script>
                 
         </div>
     </div>
