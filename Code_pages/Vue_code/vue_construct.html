@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <!---->
+    <meta charset="UTF-8" />
+    <!-- 讓搜尋引擎更了解這個網頁的內容 -->
+    <meta name="description" content="Gary Web" />
+    <meta name="author" content="Gary Pu" />
+    <meta name="keyword" content="日常筆記,軟體筆記,拍照" />
+    <!-- viewport 視口 調整裝置螢幕比例大小-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Vue 建構</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <link rel="shortcut icon" href="../../icons/favicon.ico">
+    <link rel="bookmark" href="../../icons/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="nav1">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <img src="../../icons/icons8-menu-50.png">
+            </label>
+            <label class="logo">Vue 建構</label>
+            <ul class="nav_slide_bar">
+                <li><a class="nav_bar" href="../../index.html">Home</a></li>
+                <li><a class="nav_bar" href="../../Photo.html">Photos</a></li>
+                <li><a class="nav_bar" href="../../AboutMe.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <button id="btnscrolltotop">
+        <i class="material-icons">arrow_upward</i>
+    </button>
+    <div class="container" style="background-color:rgb(242, 242, 242);">
+        <div class="container-col" style="background-color: rgb(255, 255, 255);">
+            <h1>Vue 建構</h1>
+            <p>我們使用Vite來建置，vite可以幫我們建立vue的專案，在local起個開發環境與伺服器，最後可以幫我把整個vue給打包的一個工具。</p>
+            <h2>安裝vite:</h2>
+            <p>選擇yarn</p>
+            <p>Note:注意node.js的版本<img src="../../Photos/code_pic/Vue_construct/1.png"></p>
+            <p>貼到我們vscode裡的終端機上執行，接著他就會問你Project name、select a framework(選擇框架:Vue, react, preact...)最後select variant(選擇開發語言:javascripy、typescript)<img src="../../Photos/code_pic/Vue_construct/2.png"></p>
+            <p>可以看到左邊新增我們的Project<img src="../../Photos/code_pic/Vue_construct/3.png"></p>
+            <p>執行yarn，安裝目前專案所需要的模組<img src="../../Photos/code_pic/Vue_construct/4.png"></p>
+            <p>再來執行yarn dev，啟動我們vue的專案</p>
+            <p>如圖我們在本地啟動了localhost:3000<img src="../../Photos/code_pic/Vue_construct/5.png"></p>
+            <p>ctrl點選localhost:3000，可以看到如下圖，為vue的起始頁面，看到著個就代表我們啟動成功啦!<img src="../../Photos/code_pic/Vue_construct/6.png"></p>
+            <p>那我們就可以開始開發啦~</p>
+
+        </div>
+    </div>
+    <script src="../../script.js"></script>
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="social">
+                <a href="https://www.facebook.com/pu.k.yi.3/" style="text-decoration: none;">
+                    <img src="../../icons/icons8-facebook-50.png">
+                </a>
+                <a href="https://www.instagram.com/gary_pu_666/" style="text-decoration: none;">
+                    <img src="../../icons/icons8-instagram-50.png">
+                </a>
+                <a href="https://github.com/mike7777op" style="text-decoration: none;">
+                    <img src="../../icons/icons8-github-50.png">
+                </a>
+                <a href="https://twitter.com/Gary66662" style="text-decoration: none;">
+                    <img src="../../icons/icons8-twitter-50.png">
+                </a>
+            </div>
+            <div class="list">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../Photo.html">Photos</a></li>
+                <li><a href="../../AboutMe.html">About</a></li>
+            </div>
+            <p class="copyright">
+                © 2021 Gary Pu
+            </p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
