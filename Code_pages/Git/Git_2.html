@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <!---->
+    <meta charset="UTF-8" />
+    <!-- 讓搜尋引擎更了解這個網頁的內容 -->
+    <meta name="description" content="Gary Web" />
+    <meta name="author" content="Gary Pu" />
+    <meta name="keyword" content="日常筆記,軟體筆記,拍照" />
+    <!-- viewport 視口 調整裝置螢幕比例大小-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Git</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <link rel="shortcut icon" href="../../icons/favicon.ico">
+    <link rel="bookmark" href="../../icons/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="nav1">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <img src="../../icons/icons8-menu-50.png">
+            </label>
+            <label class="logo">Git與GitHub</label>
+            <ul class="nav_slide_bar">
+                <li><a class="nav_bar" href="../../index.html">Home</a></li>
+                <li><a class="nav_bar" href="../../Photo.html">Photos</a></li>
+                <li><a class="nav_bar" href="../../AboutMe.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <button id="btnscrolltotop">
+        <i class="material-icons">arrow_upward</i>
+    </button>
+    <div class="container" style="background-color:rgb(242, 242, 242);">
+        <div class="container-col" style="background-color: rgb(255, 255, 255);">
+            <img src="../../Photos/code_pic/git/20.png">
+            <br />
+            <h1>Git教學第二章:</h1>
+            <p>上一頁講完了該怎麼建立我們的GitHub，以及Git Bash的操作指令，相同的指令也可以在我們的Vscode上操做。</p>
+            <p>那我們今天要補充的是git reset與git checkout。</p>
+            <br/>
+            <h2>git reset與git checkout:</h2>
+            <p>首先先修改檔案，可以看到左邊的工具欄位，變更的項目，我們按下加號(等同於git add的意思)可以看到變成"暫存的變更"，等待commit。<img src="../../Photos/code_pic/git/21.png"><img src="../../Photos/code_pic/git/29.png"></p>
+            <br/>
+            <p>當我們輸入git reset --test1.txt，可以又看到回到變更的欄位了。<img src="../../Photos/code_pic/git/22.png"></p>
+            <br/>
+            <p>那如果要從vscode刪除變更，我們只要按reset的按鍵就可以了，那如果是在Git Bash上超做的話，我們可以打git reset ，我們可以打git checkout --test1.txt，也有同樣的效果。<img src="../../Photos/code_pic/git/30.png"></p>
+            <br/>
+            <p>git有一個很方便的功能是，假如我們commit的內容錯了或是檔案加錯了，我們想要回到上一個commit，我們可以點選vscode上如下圖。<img src="../../Photos/code_pic/git/25.png"><img src="../../Photos/code_pic/git/26.png"></p>
+            <br/>
+            <p>那如果是在Git Bash上可以打git reset --soft HEAD~1，後面的數字代表要往上找第幾個commit，2就代表前兩個commit。<img src="../../Photos/code_pic/git/28.png"></p>
+            <br/>
+            <div>
+                 <a id="Git_pre_page" href="Git1.html"><button>Git章節一</button></a>
+                <a id="Git_next_page" href="Git_3.html"><button>Git章節三</button></a>
+                <br />
+            </div>
+        </div>
+    </div>
+    <script src="../../script.js"></script>
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="social">
+                <a href="https://www.facebook.com/pu.k.yi.3/" style="text-decoration: none;">
+                    <img src="../../icons/icons8-facebook-50.png">
+                </a>
+                <a href="https://www.instagram.com/gary_pu_666/" style="text-decoration: none;">
+                    <img src="../../icons/icons8-instagram-50.png">
+                </a>
+                <a href="https://github.com/mike7777op" style="text-decoration: none;">
+                    <img src="../../icons/icons8-github-50.png">
+                </a>
+                <a href="https://twitter.com/Gary66662" style="text-decoration: none;">
+                    <img src="../../icons/icons8-twitter-50.png">
+                </a>
+            </div>
+            <div class="list">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../Photo.html">Photos</a></li>
+                <li><a href="../../AboutMe.html">About</a></li>
+            </div>
+            <p class="copyright">
+                © 2021 Gary Pu
+            </p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

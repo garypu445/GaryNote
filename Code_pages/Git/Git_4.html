@@ -1,0 +1,123 @@
+<html>
+
+<head>
+    <!---->
+    <meta charset="UTF-8" />
+    <!-- 讓搜尋引擎更了解這個網頁的內容 -->
+    <meta name="description" content="Gary Web" />
+    <meta name="author" content="Gary Pu" />
+    <meta name="keyword" content="日常筆記,軟體筆記,拍照" />
+    <!-- viewport 視口 調整裝置螢幕比例大小-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Git</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <link rel="shortcut icon" href="../../icons/favicon.ico">
+    <link rel="bookmark" href="../../icons/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="nav1">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <img src="../../icons/icons8-menu-50.png">
+            </label>
+            <label class="logo">Git與GitHub</label>
+            <ul class="nav_slide_bar">
+                <li><a class="nav_bar" href="../../index.html">Home</a></li>
+                <li><a class="nav_bar" href="../../Photo.html">Photos</a></li>
+                <li><a class="nav_bar" href="../../AboutMe.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <button id="btnscrolltotop">
+        <i class="material-icons">arrow_upward</i>
+    </button>
+    <div class="container" style="background-color:rgb(242, 242, 242);">
+        <div class="container-col" style="background-color: rgb(255, 255, 255);">
+            <img src="../../Photos/code_pic/git/20.png">
+            <br />
+            <h1>Git教學第四章:</h1>
+            <p>我們來講解branch</p>
+            <p>branch是防止conflict的出現，通常我們開發專案，我們的產品一定會有些功能我們可能還沒做完，但顧客不可能使用我們還未完成的功能的版本，而branch可以簡單的解決。</p>
+            <br/>
+            <p>而branch簡單來說就是，想像我們每次的跟改為一個支線，但假設我們要開發一個新功能，但完成到一半，這時我們可以開一個branch，意思是開了另一個支線，但這個支線不影響主要的branch。</p>
+            <br/>
+            <h2>第一步:先創建一個branch</h2>
+            <p>我們用兩台電腦實驗</p>
+            <p>在VScode的方法是在左下角我們點選master，建立分支，然後取名，如果是指令的話則輸入git checkout -b [branch的名稱]<img src="../../Photos/code_pic/git/34.png"></p>
+            <p>這時可以看到master-->new_feature<img src="../../Photos/code_pic/git/35.png"></p>
+            <p>輸入git branch可以看到我們專案裡的分支<img src="../../Photos/code_pic/git/36.png"></p>
+            <p>我們每次建完一次分支都必需push上去，輸入git push -u origin HEAD<img src="../../Photos/code_pic/git/37.png"></p>
+            <h2>第二步:如何整合branch</h2>
+            <p>Merge有兩種方法，方法一:我們在github上做pull request，方法二:我們在自己的電腦先做merge</p>
+            <p>方法一:pull request</p>
+            <p>先切到新的branch，按Compare & pull request，<img src="../../Photos/code_pic/git/38.png"></p>
+            <p>我們可以選擇要誰merge誰，而Can't automatically merge說明兩台電腦都做過更新，有衝突發生，所以不讓我們merge<img src="../../Photos/code_pic/git/39.png"></p>
+            <p>那我們做一個叫做rebase的動作，意思是我們把我們的分支接回去原來的分支，我們輸入git switch [原來的branch]<img src="../../Photos/code_pic/git/40.png">
+            </p>
+            <p>切記我們在新的branch上如果有東西沒commit，記得要先commit如果有東西沒commit，記得要先commit在切換</p>
+            <p>我們先git pull，把另一台電腦更新的版本給拉下來<img src="../../Photos/code_pic/git/41.png">
+            </p>
+            <p>在切回到new_feature的branch<img src="../../Photos/code_pic/git/42.png">
+            </p>
+            <p>最後輸入git rebase master<img src="../../Photos/code_pic/git/43.png">
+            </p>
+            <p>如果發生衝突(請看前一章節)<img src="../../Photos/code_pic/git/44.png">
+            </p>
+            <p>修改完後輸入git rebase --continue，就可以解好衝突了<img src="../../Photos/code_pic/git/45.png">
+            </p>
+            <p>但push時發現有錯誤，原因是我們在push的話會改變你過去的歷史紀錄，所以它不讓你push<img src="../../Photos/code_pic/git/46.png">
+            </p>
+            <p>解法就是我們強制push上去，git push -f<img src="../../Photos/code_pic/git/47.png">
+            </p>
+            <p>注意，這邊的push -f，不建議在主分支上做，只適合在其他分支，</p>
+            <p>回到github在merge一次點選create pull request<img src="../../Photos/code_pic/git/48.png"></p>
+            <p>點選Merge pull request<img src="../../Photos/code_pic/git/49.png">Confirm merge<img src="../../Photos/code_pic/git/50.png">
+            </p>
+            <p>這樣我們就成功merge了</p>
+            <h2>第三步:如何刪除branch</h2>
+            <p>我們切回master，輸入git branch -d [分支]<img src="../../Photos/code_pic/git/51.png"></p>
+
+
+            <br />
+            <div>
+                <a id="Git_pre_page" href="Git_2.html"><button>Git章節三</button></a>
+                <a id="Git_next_page" href="Git_1.html"><button>Git章節一</button></a>
+                <br />
+            </div>
+        </div>
+    </div>
+    <script src="../../script.js"></script>
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="social">
+                <a href="https://www.facebook.com/pu.k.yi.3/" style="text-decoration: none;">
+                    <img src="../../icons/icons8-facebook-50.png">
+                </a>
+                <a href="https://www.instagram.com/gary_pu_666/" style="text-decoration: none;">
+                    <img src="../../icons/icons8-instagram-50.png">
+                </a>
+                <a href="https://github.com/mike7777op" style="text-decoration: none;">
+                    <img src="../../icons/icons8-github-50.png">
+                </a>
+                <a href="https://twitter.com/Gary66662" style="text-decoration: none;">
+                    <img src="../../icons/icons8-twitter-50.png">
+                </a>
+            </div>
+            <div class="list">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../Photo.html">Photos</a></li>
+                <li><a href="../../AboutMe.html">About</a></li>
+            </div>
+            <p class="copyright">
+                © 2021 Gary Pu
+            </p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
