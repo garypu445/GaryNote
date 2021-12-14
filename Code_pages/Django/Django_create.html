@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <!---->
+    <meta charset="UTF-8" />
+    <!-- 讓搜尋引擎更了解這個網頁的內容 -->
+    <meta name="description" content="Gary Web" />
+    <meta name="author" content="Gary Pu" />
+    <meta name="keyword" content="日常筆記,軟體筆記,拍照" />
+    <!-- viewport 視口 調整裝置螢幕比例大小-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Django 建構</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <link rel="shortcut icon" href="../../icons/favicon.ico">
+    <link rel="bookmark" href="../../icons/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="nav1">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <img src="../../icons/icons8-menu-50.png">
+            </label>
+            <label class="logo">Django 建構</label>
+            <ul class="nav_slide_bar">
+                <li><a class="nav_bar" href="../../index.html">Home</a></li>
+                <li><a class="nav_bar" href="../../Photo.html">Photos</a></li>
+                <li><a class="nav_bar" href="../../AboutMe.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <button id="btnscrolltotop">
+        <i class="material-icons">arrow_upward</i>
+    </button>
+    <div class="container" style="background-color:rgb(242, 242, 242);">
+        <div class="container-col" style="background-color: rgb(255, 255, 255);">
+            <h1>Django 建構</h1>
+            <br/>
+            <h2>Django的架構</h2>
+            <p>Django是一個由Python建構而成的網站框架(Web
+            Framework)，其中能夠包含許多的應用程式(APP)，其架構就是將網站的各個功能，模組化為多個應用程式(APP)，而每一個應用程式(APP)，其實就是Python的套件(Package)，如下圖:<img src="../../Photos/code_pic/Django/django.PNG"></p>
+            <p>就像是如果要開發一個購物網站，可以把整個網站的功能切分為多個不同的應用程式(APP)，例如登入(Login)、販賣品項(item)、商品歸類(Classification)及搜尋商品(Search)等，每一個應用程式(APP)皆專注在特定的功能邏輯，這就是Django框架的基本架構</p>
+            <h2>Django的優點</h2>
+            <h3>擴展性</h3>
+            <p>由於Django的架構是將網站中關聯性高的功能模組化為多個套件(Package)，所以未來要擴展新功能時非常的容易，並且不會影響到既有的專案架構</p>
+            <h3>移值性</h3>
+            <p>jango框架定義了專案的基本架構及程式碼撰寫規範，開發人員在參與多個專案時，無需重新適應，可以快速的進入狀況，也因為遵循了Django的規範，提高了Django專案的維護性</p>
+            <h3>強大的後台</h3>
+            <p>在建立Django專案後，預設即提供了一個功能完整的後台，包含使用者的管理、群組管理及資料庫等，並且能夠依需求客製化，無須從頭開發，這也是Django能夠快速開發的原因之一</p>
+            <h2>安裝Django:</h2>
+            <h3>步驟一</h3>
+            <img src="../../Photos/code_pic/Django/5.png" style="width: 500px;">
+            <h3>步驟二</h3>
+            <p>在指定的資料夾內建立Django，我們在cmd裡輸入django-admin startproject [檔案名稱]<img src="../../Photos/code_pic/Django/7.png"></p>
+            <p>執行完後，可以看到django-admin套件管理工具在Django專案中建立了一個基本的網站架構，包含了專案主程式資料夾(potrip)及manage.py檔，如下圖：<img src="../../Photos/code_pic/Django/2.png">其中檔案功能說明如下:</p>
+            <ul style="font-size: 20px; margin-left: 20px; ">
+                <li style="list-style-type: circle;">__init__.py: 用來告訴Python，potrip是一個套件(Package)</li>
+                <li style="list-style-type: circle;">asgi.py: 全名為Asynchronous Server Gateway Interface(非同步伺服器閘道介面)，是Django3.0新增加的檔案，用來提供非同步的功能</li>
+                <li style="list-style-type: circle;">settings.py: Django專案的設定檔</li>
+                <li style="list-style-type: circle;">urls.py: 定義Django專案中，各個應用程式(APP)的網址</li>
+                <li style="list-style-type: circle;">wsgi.py: 全名為Web Server Gateway Interface(網站伺服器閘道介面)，提供Django網站和伺服器間的標準介面</li>
+                <li style="list-style-type: circle;">manage.py: 用來管理整個Django專案，像是啟動本地端伺服器、連接資料庫及建立應用程式(APP)等</li>
+            </ul>
+            <h3>步驟三</h3>
+            <p>在terminal輸入python mange.py runserver<img src="../../Photos/code_pic/Django/3.png"></p>
+            <p>最後，點選localhost:8000，如果看到以下的畫面，恭喜你成功安裝了Django網站框架<img src="../../Photos/code_pic/Django/4.png"></p>
+        </div>
+    </div>
+    <script src="../../script.js"></script>
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="social">
+                <a href="https://www.facebook.com/pu.k.yi.3/" style="text-decoration: none;">
+                    <img src="../../icons/icons8-facebook-50.png">
+                </a>
+                <a href="https://www.instagram.com/gary_pu_666/" style="text-decoration: none;">
+                    <img src="../../icons/icons8-instagram-50.png">
+                </a>
+                <a href="https://github.com/mike7777op" style="text-decoration: none;">
+                    <img src="../../icons/icons8-github-50.png">
+                </a>
+                <a href="https://twitter.com/Gary66662" style="text-decoration: none;">
+                    <img src="../../icons/icons8-twitter-50.png">
+                </a>
+            </div>
+            <div class="list">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../Photo.html">Photos</a></li>
+                <li><a href="../../AboutMe.html">About</a></li>
+            </div>
+            <p class="copyright">
+                © 2021 Gary Pu
+            </p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
