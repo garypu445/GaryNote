@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <!---->
+    <meta charset="UTF-8" />
+    <!-- 讓搜尋引擎更了解這個網頁的內容 -->
+    <meta name="description" content="Gary Web" />
+    <meta name="author" content="Gary Pu" />
+    <meta name="keyword" content="日常筆記,軟體筆記,拍照" />
+    <!-- viewport 視口 調整裝置螢幕比例大小-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Vue建立組建與基本資料綁定</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <link rel="shortcut icon" href="../../icons/favicon.ico">
+    <link rel="bookmark" href="../../icons/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="nav1">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <img src="../../icons/icons8-menu-50.png">
+            </label>
+            <label class="logo">Vue章節三</label>
+            <ul class="nav_slide_bar">
+                <li><a class="nav_bar" href="../../index.html">Home</a></li>
+                <li><a class="nav_bar" href="../../Photo.html">Photos</a></li>
+                <li><a class="nav_bar" href="../../AboutMe.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <button id="btnscrolltotop">
+        <i class="material-icons">arrow_upward</i>
+    </button>
+    <div class="container" style="background-color:rgb(242, 242, 242);">
+        <div class="container-col" style="background-color: rgb(255, 255, 255);">
+            <h1>Vue建立組建與基本資料綁定</h1>
+            <h2>步驟一</h2>
+            <p>在components資料夾裡新增一個檔案<img src="../../Photos/code_pic/Vue_construct/8.png"></p>
+            <p>在App.vue的script標籤匯入<img src="../../Photos/code_pic/Vue_construct/9.png"></p>
+            <img src="../../Photos/code_pic/Vue_construct/10.png">
+            <p>單向資料綁定，回到componentsA.vue裡，在template裡面有個叫模板語法，{{變數}}，我們自己定義，export default是默認導出模塊，這樣就能引用裡面的內容出來使用，name指的是位組賤命名，可不寫，data是我們要放資料的function(函數)，return回傳內容。<img src="../../Photos/code_pic/Vue_construct/11.png">我們定義了data這個資料，然後綁訂到畫面上</p>
+            <h2>資料驅動畫面</h2>
+            <p>前端框架，像是Vue、React...，核心理念是說不要花太多時間在處理畫面上，而是要我們專心處理資料與事件</p>
+            <h2>v-model</h2>
+            <p>要講到「雙向綁定」就要先說一下v-model，它是Vue.js中的一個屬性，可以對input、textarea、select、checkbox等…這些輸入表單做雙向綁定，運做原理是透過監聽使用者輸入的事件來更新內容！聽起來有點抽象嗎？接下來實際做做看會比較容易了解</p>
+            <p>雙向綁定，加上input就可以了，後面加上v-model，<img src="../../Photos/code_pic/Vue_construct/12.png"></p>
+            <h2>.trim</h2>
+            <p>在輸入資料時，難免會有人一開始前面多打了一個空白鍵，或是複製貼上時不小心多選到一個空白符號，這時貼心的.trim就能幫忙我們自動去掉空白！用法很容易，直接在v-model後加入.trim就行了！如下:<img src="../../Photos/code_pic/Vue_construct/13.png">
+            </p>
+            <h2>.lazy</h2>
+            <p>剛剛有沒有發現，我們在input輸入文字時，它是完全即時同步的，那如果我要等離開input時才更新我輸入的內容呢？一樣在v-model後加入.lazy就行了！如下:<img src="../../Photos/code_pic/Vue_construct/14.png">
+            </p>
+            <h2>.number</h2>
+            <p>輸入欄位中，很多是限定輸入為「數字」的，比如說「年齡」，如果有人不小心輸入了文字呢？.number這時就好用了！老樣子，在v-model後加入.number，另外將<input>設定為type=number，它會只讓「數字」輸入，如下做法：<img src="../../Photos/code_pic/Vue_construct/15.png">
+            </p>
+           <div>
+                <a id="Git_pre_page" href="vue_2.html"><button>Vue章節二</button></a>
+                <a id="Git_next_page" href="vue_construct.html"><button>Vue章節一</button></a>
+                <br />
+            </div>
+        </div>
+    </div>
+    <script src="../../script.js"></script>
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="social">
+                <a href="https://www.facebook.com/pu.k.yi.3/" style="text-decoration: none;">
+                    <img src="../../icons/icons8-facebook-50.png">
+                </a>
+                <a href="https://www.instagram.com/gary_pu_666/" style="text-decoration: none;">
+                    <img src="../../icons/icons8-instagram-50.png">
+                </a>
+                <a href="https://github.com/mike7777op" style="text-decoration: none;">
+                    <img src="../../icons/icons8-github-50.png">
+                </a>
+                <a href="https://twitter.com/Gary66662" style="text-decoration: none;">
+                    <img src="../../icons/icons8-twitter-50.png">
+                </a>
+            </div>
+            <div class="list">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../Photo.html">Photos</a></li>
+                <li><a href="../../AboutMe.html">About</a></li>
+            </div>
+            <p class="copyright">
+                © 2021 Gary Pu
+            </p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

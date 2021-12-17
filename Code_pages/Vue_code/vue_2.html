@@ -9,7 +9,7 @@
     <meta name="keyword" content="日常筆記,軟體筆記,拍照" />
     <!-- viewport 視口 調整裝置螢幕比例大小-->
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>Vue 建構</title>
+    <title>介紹Vue</title>
     <link rel="stylesheet" href="../../style.css" />
     <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
     <link rel="shortcut icon" href="../../icons/favicon.ico">
@@ -24,7 +24,7 @@
             <label for="check" class="checkbtn">
                 <img src="../../icons/icons8-menu-50.png">
             </label>
-            <label class="logo">Vue章節一</label>
+            <label class="logo">Vue章節二</label>
             <ul class="nav_slide_bar">
                 <li><a class="nav_bar" href="../../index.html">Home</a></li>
                 <li><a class="nav_bar" href="../../Photo.html">Photos</a></li>
@@ -37,24 +37,23 @@
     </button>
     <div class="container" style="background-color:rgb(242, 242, 242);">
         <div class="container-col" style="background-color: rgb(255, 255, 255);">
-            <h1>Vue 建構</h1>
+            <h1>介紹Vue</h1>
             <p>我們使用Vite來建置，vite可以幫我們建立vue的專案，在local起個開發環境與伺服器，最後可以幫我把整個vue給打包的一個工具。</p>
-            <h2>安裝vite:</h2>
-            <p>選擇yarn</p>
-            <p>Note:注意node.js的版本<img src="../../Photos/code_pic/Vue_construct/1.png"></p>
-            <p>貼到我們vscode裡的終端機上執行，接著他就會問你Project name、select a framework(選擇框架:Vue, react, preact...)最後select variant(選擇開發語言:javascripy、typescript)<img src="../../Photos/code_pic/Vue_construct/2.png"></p>
-            <p>可以看到左邊新增我們的Project<img src="../../Photos/code_pic/Vue_construct/3.png"></p>
-            <p>執行yarn，安裝目前專案所需要的模組<img src="../../Photos/code_pic/Vue_construct/4.png"></p>
-            <p>再來執行yarn dev，啟動我們vue的專案</p>
-            <p>如圖我們在本地啟動了localhost:3000<img src="../../Photos/code_pic/Vue_construct/5.png"></p>
-            <p>ctrl點選localhost:3000，可以看到如下圖，為vue的起始頁面，看到著個就代表我們啟動成功啦!<img src="../../Photos/code_pic/Vue_construct/6.png"></p>
-            <p>那我們就可以開始開發啦~</p>
-
+            <h2>先來介紹Vue裡的檔案個個是甚麼?</h2>
+            <img src="../../Photos/code_pic/Vue_construct/7.png">
+            <p>我們從最下面開始說起</p>
+            <ul style="font-size: 20px; margin-left: 20px; ">
+                <li style="list-style-type: circle;">yarn,lock: 紀錄我們當前專案所用到的模組版本</li>
+                <li style="list-style-type: circle;">vite.config.js: vite的設定檔</li>
+                <li style="list-style-type: circle;">package.json: 我們專案的設定檔，包含name(專案名稱)、version(版本)、script(腳本可以更改yarn dev後面的名稱)、dependencies與devDependencies(我們專案所用到的模組有哪些，但只有dependencies會進行專案的打包)</li>
+                <li style="list-style-type: circle;">public: 放我們靜態的資源</li>
+                <li style="list-style-type: circle;">node_moduls: 放的是我們第三方的模組，這些都會記錄在我們的package.json裡</li>
+            </ul>
             <div>
-                <a id="Git_next_page" href="vue_2.html"><button>Vue章節二</button></a>
+                <a id="Git_pre_page" href="vue_construct.html"><button>Vue章節一</button></a>
+                <a id="Git_next_page" href="vue_3.html"><button>Vue章節三</button></a>
                 <br />
             </div>
-
         </div>
     </div>
     <script src="../../script.js"></script>
