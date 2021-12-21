@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <!---->
+    <meta charset="UTF-8" />
+    <!-- 讓搜尋引擎更了解這個網頁的內容 -->
+    <meta name="description" content="Gary Web" />
+    <meta name="author" content="Gary Pu" />
+    <meta name="keyword" content="日常筆記,軟體筆記,拍照" />
+    <!-- viewport 視口 調整裝置螢幕比例大小-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Django 建立應用程式(App)</title>
+    <link rel="stylesheet" href="../../style.css" />
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+    <link rel="shortcut icon" href="../../icons/favicon.ico">
+    <link rel="bookmark" href="../../icons/favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="nav1">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <img src="../../icons/icons8-menu-50.png">
+            </label>
+            <label class="logo">Django 建立應用程式(App)</label>
+            <ul class="nav_slide_bar">
+                <li><a class="nav_bar" href="../../index.html">Home</a></li>
+                <li><a class="nav_bar" href="../../Photo.html">Photos</a></li>
+                <li><a class="nav_bar" href="../../AboutMe.html">About Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <button id="btnscrolltotop">
+        <i class="material-icons">arrow_upward</i>
+    </button>
+    <div class="container" style="background-color:rgb(242, 242, 242);">
+        <div class="container-col" style="background-color: rgb(255, 255, 255);">
+            <h1>Django 建立應用程式(App)</h1>
+            <br />
+            <h2>建立App</h2>
+            <p>在Terminal視窗中，輸入以下指令來建立應用程式(APP)：<img src="../../Photos/code_pic/Django/10.png"></p>
+            <p><img src="../../Photos/code_pic/Django/8.png">其中的檔案功能，簡單說明如下：</p>
+            <ul style="font-size: 20px; margin-left: 20px; ">
+                <li style="list-style-type: circle;">migrations: 記錄資料庫與models.py中的欄位同步歷程</li>
+                <li style="list-style-type: circle;">__init__.py: 這個檔案顯示了Django的每個應用程式(APP)，事實上就是Python套件(Package)</li>
+                <li style="list-style-type: circle;">admin.py: 可以用來定義或客製化這個應用程式(APP)在Django後台(Django Administration)的欄位顯示方式</li>
+                <li style="list-style-type: circle;">apps.py: 這個Django應用程式的設定檔</li>
+                <li style="list-style-type: circle;">models.py: 定義Django應用程式的資料庫欄位</li>
+                <li style="list-style-type: circle;">tests.py: 能夠撰寫Django應用程式的自動化測試腳本</li>
+                <li style="list-style-type: circle;">views.py: 負責接收瀏覽器的請求，進行邏輯的處理後，回傳執行結果給瀏覽器</li>
+            </ul>
+            <p>在INSTALL_APPS的地方將應用程式(posts)進行加入的動作，如下範例：<img src="../../Photos/code_pic/Django/11.png"></p>
+            <h2>應用網址</h2>
+            <p>在posts應用程式資料夾下，新增urls.py，接著即可在其中定義網址，如下範例：<img src="../../Photos/code_pic/Django/12.png"></p>
+            <p>應用程式(APP)的網址定義完成後，接下來就要註冊到Django專案主程式，讓它知道有posts這個應用程式(APP)的存在</p>
+            <p>而註冊的方式就是開啟專案主程式potrip資料夾下的urls.py檔案，將posts應用程式(APP)的網址新增至urlpatterns中，如下範例：<img src="../../Photos/code_pic/Django/13.png"></p>
+            <h2>Django應用程式檢視函式(View Function)</h2>
+            <p>接著開啟views.py來撰寫對應的檢視函式(View Function)，如下範例：<img src="../../Photos/code_pic/Django/14.png">檢視函式(View Function)其實就是Python的函式(Function)，但是必須要有request參數。而回傳給瀏覽器的內容須引用HttpResponse類別，這邊示範單純回傳一個字串給瀏覽器</p>
+            <p>執行python manage.py runserver，可以看到畫面<img src="../../Photos/code_pic/Django/15.png">後面加上posts<img src="../../Photos/code_pic/Django/16.png"></p>
+            <div>
+                <a id="Dj_pre_page" href="Django_create.html"><button>Django的建構</button></a>
+                <a id="Dj_next_page" href="Django_3.html"><button>Django資料傳遞</button></a>
+                <br />
+            </div>
+        </div>
+    </div>
+    <script src="../../script.js"></script>
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="social">
+                <a href="https://www.facebook.com/pu.k.yi.3/" style="text-decoration: none;">
+                    <img src="../../icons/icons8-facebook-50.png">
+                </a>
+                <a href="https://www.instagram.com/gary_pu_666/" style="text-decoration: none;">
+                    <img src="../../icons/icons8-instagram-50.png">
+                </a>
+                <a href="https://github.com/mike7777op" style="text-decoration: none;">
+                    <img src="../../icons/icons8-github-50.png">
+                </a>
+                <a href="https://twitter.com/Gary66662" style="text-decoration: none;">
+                    <img src="../../icons/icons8-twitter-50.png">
+                </a>
+            </div>
+            <div class="list">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../../Photo.html">Photos</a></li>
+                <li><a href="../../AboutMe.html">About</a></li>
+            </div>
+            <p class="copyright">
+                © 2021 Gary Pu
+            </p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

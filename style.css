@@ -134,6 +134,23 @@ label.logo{
     color: teal;
 }
 
+.container .container-col #Dj_next_page button{
+    width: 200px;
+    height: 100px;
+    font-size: 25px;
+    float: right;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: none;
+    background-color: white;
+    /* color: aqua; */
+}
+
+.container .container-col #Dj_next_page button:hover{
+    cursor: pointer;
+    color: teal;
+}
+
 .container .container-col #Git_pre_page button{
     width: 150px;
     height: 50px;
@@ -146,6 +163,22 @@ label.logo{
 }
 
 .container .container-col #Git_pre_page button:hover{
+    cursor: pointer;
+    color: teal;
+}
+
+.container .container-col #Dj_pre_page button{
+    width: 200px;
+    height: 100px;
+    font-size: 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: none;
+    background-color: white;
+    /* color: aqua; */
+}
+
+.container .container-col #Dj_pre_page button:hover{
     cursor: pointer;
     color: teal;
 }
