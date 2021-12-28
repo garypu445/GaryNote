@@ -40,10 +40,34 @@
             <h1>Django 資料遷移(Mysql)</h1>
             <br />
             <h2>資料遷移(Mysql)</h2>
-            
-                <a id="Dj_pre_page" href="Django_create.html"><button>Django建立</button></a>
-                <a id="Dj_next_page" href="vue_3.html"><button>Django資料遷移(Mysql)</button></a>
-                <br />
+            <p>完成應用程式(APP)的新增後，接下來，本文將利用Django的Migration(資料遷移)，來建立資料庫。重點包含：</p>
+            <ul style="font-size: 20px; margin-left: 20px; ">
+                <li style="list-style-type: circle;">Django Model(資料模型)</li>
+                <li style="list-style-type: circle;">註冊Django應用程式(APP)</li>
+                <li style="list-style-type: circle;">Django Migration(資料遷移)</li>
+                <li style="list-style-type: circle;">MySQL資料庫</li>
+            </ul>
+            <h2>一、Django Model(資料模型)</h2>
+            <p>Django專案中的posts應用程式(APP)，我們在資料庫中建立「景點位置」及「景點貼文」資料表，並且是一對多的關係(例如：中壢景點位置，可能有一到多個的景點貼文。這時候則可以在models.py中設計如下的類別(Class)：<img src="../../Photos/code_pic/Django/17.png">首先，類別(Class)需繼承models模組中的Model類別，其中封裝了存取資料庫的所有操作，例如新增、刪除、修改、查詢資料等</p>
+            <p>而models模組中，提供許多抽象化資料表欄位的類別，例如：</p>
+            <ul style="font-size: 20px; margin-left: 20px; ">
+                <li style="list-style-type: circle;">CharField：字串欄位</li>
+                <li style="list-style-type: circle;">IntegerField：整數欄位</li>
+                <li style="list-style-type: circle;">FloatField：浮點數欄位</li>
+                <li style="list-style-type: circle;">DateField：日期欄位</li>
+                <li style="list-style-type: circle;">ImageField：圖片欄位</li>
+            </ul>
+            <h2>二.Django Migration(資料遷移)</h2>
+            <p>Migration(資料遷移)實際上是一個Python檔案，用來同步Django專案下models.py中的類別(Class)及資料庫。也就是說，只要Django專案中的models.py有任何的變動，都要執行一次Migration(資料遷移)，來同步資料庫<img src="../../Photos/code_pic/Django/18.png"></p>
+            <p>我們可以看到其中建立的Migtation檔案，存放在App底下的migration資料夾中。0001_initial.py檔案內容如下:<img src="../../Photos/code_pic/Django/19.png"></p>
+            <p>Migration(資料遷移)檔案中，定義了將要在資料庫執行的動作。而接下來所要執行的migrate指令，則會依照此Migration(資料遷移)檔案，同步models.py中所建立的類別至資料庫中：<img src="../../Photos/code_pic/Django/20.png">
+            </p>
+            <h2>MySQL資料庫</h2>
+            <p>連接MySQL資料庫，我們在MySQL Workbench裡創建一個資料庫<img src="../../Photos/code_pic/Django/37.png">我們在資料庫底下創建一個mysqltutorial<img src="../../Photos/code_pic/Django/38.png">並在setting.py裡的DATABASES裡改寫連接伺服器的名稱帳號等等<img src="../../Photos/code_pic/Django/39.png"></p>
+
+            <div>
+                <a id="Dj_pre_page" href="Django_2.html"><button>Django建立App</button></a>
+                <!-- <a id="Dj_next_page" href=""><button>Django</button></a> -->
             </div>
         </div>
     </div>
