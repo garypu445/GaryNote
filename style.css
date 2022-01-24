@@ -134,19 +134,38 @@ label.logo{
     color: teal;
 }
 
-.container .container-col #Dj_next_page button{
-    width: 200px;
+.container .container-col .page_box{
+    width: 800px;
     height: 100px;
+    border: 1px solid red;
+}
+
+.container .container-col .page_box #Dj_next_page button{
+    display: inline-block;
+    /* width: 200px; */
+    /* height: 100px; */
     font-size: 25px;
     float: right;
-    margin-right: 10px;
-    margin-top: 10px;
+    /* margin-right: 10px; */
+    margin-top: 30px;
     border: none;
     background-color: white;
+    border: 1px solid red;
+    /* color: aqua; */
+}
+.container .container-col .page_box #Dj_next_page img{
+    width: 40px;
+    /* font-size: 25px; */
+    float: right;
+    margin-right: 10px;
+    margin-top: 30px;
+    border: none;
+    background-color: white;
+    border: 1px solid red;
     /* color: aqua; */
 }
 
-.container .container-col #Dj_next_page button:hover{
+.container .container-col .page_box #Dj_next_page button:hover{
     cursor: pointer;
     color: teal;
 }
@@ -167,20 +186,33 @@ label.logo{
     color: teal;
 }
 
-.container .container-col #Dj_pre_page button{
-    width: 200px;
-    height: 100px;
+.container .container-col .page_box #Dj_pre_page button{
+    /* display: inline-block; */
+    /* width: 200px; */
+    /* height: 100px; */
     font-size: 25px;
     margin-right: 10px;
     margin-top: 10px;
     border: none;
     background-color: white;
+    border: 1px solid red;
     /* color: aqua; */
 }
 
-.container .container-col #Dj_pre_page button:hover{
+.container .container-col .page_box #Dj_pre_page button:hover{
     cursor: pointer;
     color: teal;
+}
+
+.container .container-col .page_box #Dj_pre_page img{
+    width: 40px;
+    /* font-size: 25px; */
+    margin-top: 30px;
+    border: none;
+    background-color: white;
+    transform: rotate(180deg);
+    border: 1px solid red;
+    /* color: aqua; */
 }
 
 .footer {
