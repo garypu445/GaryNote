@@ -117,102 +117,167 @@ label.logo{
     width: 100%;
 }
 
-.container .container-col #Git_next_page button{
-    width: 150px;
-    height: 50px;
-    font-size: 25px;
-    float: right;
-    margin-right: 10px;
-    margin-top: 10px;
-    border: none;
-    background-color: white;
-    /* color: aqua; */
+
+#DIV1{
+    width:240px;
+    line-height:50px;
+    /* padding:20px; */
+    /* border:2px blue solid; */
+    float:left;
 }
 
-.container .container-col #Git_next_page button:hover{
+#DIV1 button:hover{
     cursor: pointer;
     color: teal;
 }
 
-.container .container-col .page_box{
-    width: 800px;
-    height: 100px;
-    border: 1px solid red;
-}
-
-.container .container-col .page_box #Dj_next_page button{
-    display: inline-block;
-    /* width: 200px; */
-    /* height: 100px; */
-    font-size: 25px;
-    float: right;
-    /* margin-right: 10px; */
-    margin-top: 30px;
-    border: none;
-    background-color: white;
-    border: 1px solid red;
-    /* color: aqua; */
-}
-.container .container-col .page_box #Dj_next_page img{
-    width: 40px;
-    /* font-size: 25px; */
-    float: right;
-    margin-right: 10px;
-    margin-top: 30px;
-    border: none;
-    background-color: white;
-    border: 1px solid red;
-    /* color: aqua; */
-}
-
-.container .container-col .page_box #Dj_next_page button:hover{
-    cursor: pointer;
-    color: teal;
-}
-
-.container .container-col #Git_pre_page button{
-    width: 150px;
-    height: 50px;
-    font-size: 25px;
-    margin-right: 10px;
-    margin-top: 10px;
-    border: none;
-    background-color: white;
-    /* color: aqua; */
-}
-
-.container .container-col #Git_pre_page button:hover{
-    cursor: pointer;
-    color: teal;
-}
-
-.container .container-col .page_box #Dj_pre_page button{
-    /* display: inline-block; */
-    /* width: 200px; */
-    /* height: 100px; */
-    font-size: 25px;
-    margin-right: 10px;
-    margin-top: 10px;
-    border: none;
-    background-color: white;
-    border: 1px solid red;
-    /* color: aqua; */
-}
-
-.container .container-col .page_box #Dj_pre_page button:hover{
-    cursor: pointer;
-    color: teal;
-}
-
-.container .container-col .page_box #Dj_pre_page img{
-    width: 40px;
-    /* font-size: 25px; */
-    margin-top: 30px;
-    border: none;
-    background-color: white;
+#DIV1 img{
+    width: 50px;
     transform: rotate(180deg);
-    border: 1px solid red;
-    /* color: aqua; */
+    float: left;
+}
+
+#DIV1 button{
+    font-size: 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: none;
+    background-color: white;
+    float: right;
+}
+
+#DIV2{
+    width:240px;
+    line-height:50px;
+    /* padding:20px; */
+    /* border:2px green solid; */
+    float:right;
+    }
+
+#DIV2 button:hover{
+    cursor: pointer;
+    color: teal;
+}
+
+#DIV2 img{
+    width: 50px;
+    float: right;
+}
+
+#DIV2 button{
+    font-size: 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: none;
+    background-color: white;
+}
+
+#DIV3{
+    width:180px;
+    line-height:50px;
+    /* padding:20px; */
+    /* border:2px blue solid; */
+    float:left;
+}
+
+#DIV3 button:hover{
+    cursor: pointer;
+    color: teal;
+}
+
+#DIV3 img{
+    width: 50px;
+    transform: rotate(180deg);
+    float: left;
+}
+
+#DIV3 button{
+    font-size: 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: none;
+    background-color: white;
+    float: right;
+}
+
+#DIV4{
+    width:170px;
+    line-height:50px;
+    /* padding:20px; */
+    /* border:2px green solid; */
+    float:right;
+    }
+
+#DIV4 button:hover{
+    cursor: pointer;
+    color: teal;
+}
+
+#DIV4 img{
+    width: 50px;
+    float: right;
+}
+
+#DIV4 button{
+    font-size: 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: none;
+    background-color: white;
+}
+
+#DIV5{
+    width:190px;
+    line-height:50px;
+    /* padding:20px; */
+    /* border:2px blue solid; */
+    float:left;
+}
+
+#DIV5 button:hover{
+    cursor: pointer;
+    color: teal;
+}
+
+#DIV5 img{
+    width: 50px;
+    transform: rotate(180deg);
+    float: left;
+}
+
+#DIV5 button{
+    font-size: 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: none;
+    background-color: white;
+    float: right;
+}
+
+#DIV6{
+    width:190px;
+    line-height:50px;
+    /* padding:20px; */
+    /* border:2px green solid; */
+    float:right;
+    }
+
+#DIV6 button:hover{
+    cursor: pointer;
+    color: teal;
+}
+
+#DIV6 img{
+    width: 50px;
+    float: right;
+}
+
+#DIV6 button{
+    font-size: 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border: none;
+    background-color: white;
 }
 
 .footer {
