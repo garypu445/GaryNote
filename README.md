@@ -25,4 +25,5 @@
 <!-- Please don't remove this: Grab your social icons from https://github.com/mike7777op -->
 
 # GaryNote | Gary Web
-紀錄一些程式語言的練習與出去玩的照片記錄
+紀錄一些程式語言的練習與出去玩的照片記錄  
+網址:https://mike7777op.github.io/Gary_Note/
